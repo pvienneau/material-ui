@@ -134,7 +134,7 @@ class Tooltip extends Component {
   }
 
   setTooltipPosition() {
-    this.setState({offsetWidth: this.refs.tooltip.offsetWidth});
+    this.setState({offsetWidth: this.refs.tooltip.offsetWidth || null});
   }
 
   render() {
